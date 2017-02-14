@@ -19,5 +19,5 @@ from django.contrib import admin
 urlpatterns = [
 	url(r'^admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
     url(r'^crazyadmin/', admin.site.urls),
-    url(r'^$', include('blog.urls')),
+    url(r'^', include('blog.urls')),
 ]
